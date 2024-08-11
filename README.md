@@ -1,2 +1,2 @@
-# Veolia API
-Get daily water consumption data from the veolia API
+# VeoliAPI
+Get monthly water consumption data from the veolia API

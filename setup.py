@@ -4,18 +4,22 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="veoliaAPI-CorentinGrard",
+    name="veoliAPI",
     version="0.0.1",
     author="Corentin Grard",
     author_email="corentin.grard@gmail.com",
-    description="A small package to work with prime numbers",
+    description="To get the monthly water consumption from the Veolia API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/clement-bonnet/medium-first-package",
+    url="https://github.com/CorentinGrard/VeoliAPI",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-    ]
+    ],
+    install_requires=[
+        "requests",
+    ],
+    python_requires='>=3.6',
 )

@@ -5,7 +5,7 @@ import hashlib
 import logging
 from urllib.parse import urlencode, urlparse, parse_qs
 
-class VeoliaAuthenticator:
+class VeoliaAPI:
     LOGIN_URL = "https://login.eau.veolia.fr"
     BASE_URL = "https://www.eau.veolia.fr"
     CLIENT_ID = "tHBtoPOLiI2NSbCzqYz6pydZ1Xil0Bw2"
@@ -246,13 +246,3 @@ class VeoliaAuthenticator:
             self.logger.error("Get data call error")
             raise Exception("Get data call error")
         return data_response.json()
-        
-
-# Example usage:
-logging.basicConfig(filename='veolia.log', level=logging.INFO)
-username = "YOUR_EMAIL"
-password = "YOUR_PASSWORD"
-veoliaAPI = VeoliaAuthenticator(username, password)
-veoliaAPI.login()
-consumption = veoliaAPI.get_data("2024", "8")
-print(consumption)

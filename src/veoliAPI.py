@@ -5,7 +5,7 @@ import hashlib
 import logging
 from urllib.parse import urlencode, urlparse, parse_qs
 
-class VeoliaAPI:
+class VeoliAPI:
     LOGIN_URL = "https://login.eau.veolia.fr"
     BASE_URL = "https://www.eau.veolia.fr"
     CLIENT_ID = "tHBtoPOLiI2NSbCzqYz6pydZ1Xil0Bw2"

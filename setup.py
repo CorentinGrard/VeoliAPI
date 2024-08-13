@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="veoliAPI",
-    version="0.0.1",
+    version="0.0.2",
     author="Corentin Grard",
     author_email="corentin.grard@gmail.com",
     description="To get the monthly water consumption from the Veolia API",

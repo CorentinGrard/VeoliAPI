@@ -19,7 +19,7 @@ setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        "requests",
+        "aiohttp",
     ],
     python_requires='>=3.6',
 )
